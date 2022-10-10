@@ -1,24 +1,8 @@
 // ===== All Categories 
-const listCategories = document.querySelectorAll('.item');
-console.log('Number of categories:', listCategories.length);
-
-// ===== First Category
-const firstTitleCategory = document.querySelectorAll('h2')[0];
-console.log('Category:', firstTitleCategory.textContent);
-
-const elemFirstCateg = document.querySelectorAll('.item-list')[0];
-console.log('Elements:', elemFirstCateg.children.length);
-
-// ===== Second Category
-const secondTitleCategory = document.querySelectorAll('h2')[1];
-console.log('Category:', secondTitleCategory.textContent);
-
-const elemSecondCateg = document.querySelectorAll('.item-list')[1];
-console.log('Elements:', elemSecondCateg.children.length);
-
-// ===== Third Category
-const thirdTitleCategory = document.querySelectorAll('h2')[2];
-console.log('Category:', thirdTitleCategory.textContent);
-
-const elemThirdCateg = document.querySelectorAll('.item-list')[2];
-console.log('Elements:', elemThirdCateg.children.length);
+const listOfCategories = document.querySelectorAll('.item');
+console.log('Number of categories:', listOfCategories.length);
+// ===== For each category: title and elements
+const titleOfCategory = listOfCategories.forEach(category => {
+    console.log('Category:', category.querySelector('h2').textContent);
+    console.log('Elements:', category.querySelector('ul').children.length)
+});
