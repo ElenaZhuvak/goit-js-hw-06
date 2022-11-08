@@ -1,8 +1,22 @@
+img {
+    padding: 0px;
+    margin: 0px;
+}
+.gallery {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
 .gallery-item {
-    flex-wrap: wrap;
-
+    display: inline-block;
 }
-
+.gallery-item:not(:last-child) {
+    margin-right: 50px;
+}
 .image-item {
+    list-style: none;
     width: 400px;
-}
+  }
