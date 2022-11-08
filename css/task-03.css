@@ -1,6 +1,7 @@
 img {
-    padding: 0px;
-    margin: 0px;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 .gallery {
     list-style: none;
