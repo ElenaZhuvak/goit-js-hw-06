@@ -15,15 +15,15 @@ let counterValue = 0;
 btnDecrementRef.addEventListener('click', function () {
     // console.log('Клик по кнопке -');
     counterValue -= 1;
-    // valueRef.innerHTML = counterValue;
     valueRef.textContent = counterValue;
+    // valueRef.innerHTML = counterValue;
 });
 
 btnIncrementRef.addEventListener('click', function () {
     // console.log('Клик по кнопке +');
     counterValue += 1;
-    // valueRef.innerHTML = counterValue;
     valueRef.textContent = counterValue;
+    // valueRef.innerHTML = counterValue;
 });
   // работает через innerHTML и через textContent
 
